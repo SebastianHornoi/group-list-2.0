@@ -1,0 +1,87 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1.0">
+  <meta http-equiv="X-UA-Compatible" content="ie=edge">
+  <title>Document</title>
+  <link rel="stylesheet" href="style.css">
+  <link href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.13.0/css/all.min.css" rel="stylesheet">
+</head>
+</head>
+<body>
+
+<div class="page__container">
+
+  <div class="main__container">
+
+     <!-- menu -->
+     <div class="main__sx">
+        <div class="main__Sx__menu">
+
+          <img src="c.png" class="main__Sx__menu--active" alt="" id="todo">
+          <img src="b.png" alt="" id="calendar">
+
+        </div>
+     </div>
+
+
+     <!--
+          sezione todo
+                             -->
+     <div id="todoSchermo" class="main__dx__todo">
+        <div class="main__dx__sopra">
+           <form action="" class="form">
+             <input type="text" name="task" placeholder="add task..." id="">
+             <input type="submit" value="Add" class="icon">
+           </form>
+           <div class="visual__container">
+             <img onclick="orizontale()" class="ori" src="orizontale.png" alt="">
+             <img onclick="verticale()"  class="ver" src="verticale.png" alt="">
+           </div>
+        </div>
+
+        <div  class="main__dx__sotto">
+          <ul id="dxSotto" class="task__list">
+
+          </ul>
+        </div>
+     </div>
+
+     <!--
+          sezione calendario
+                             -->
+     <div id="calendarSchermo" class="main__dx__calendar">
+        <div class="calendar__content">
+          <div class="month">
+            <i class="fas fa-angle-left prev"></i>
+            <div class="date">
+              <h1></h1>
+              <p></p>
+            </div>
+            <i class="fas fa-angle-right next"></i>
+          </div>
+          <div class="weekdays">
+            <div class="">sun</div>
+            <div class="">mon</div>
+            <div class="">tue</div>
+            <div class="">wed</div>
+            <div class="">thu</div>
+            <div class="">fri</div>
+            <div class="">sat</div>
+          </div>
+          <div class="days">
+             <img src="" alt="">
+          </div>
+        </div>
+     </div>
+
+
+
+  </div>
+</div>
+
+
+<script src="main.js" charset="utf-8"></script>
+</body>
+</html>
